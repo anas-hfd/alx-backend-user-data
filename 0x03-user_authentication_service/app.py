@@ -76,7 +76,7 @@ def log_out() -> str:
 
 @app.route('/profile', methods=['GET'])
 def profile() -> str:
-    """ check if the user exist, respond with a 200 HTTP status and a JSON Payload
+    """ check if user exist, respond with 200 HTTP status and JSON Payload
     Otherwise respond with a 403 HTTP status.
     """
     session_id = request.cookies.get("session_id", None)
